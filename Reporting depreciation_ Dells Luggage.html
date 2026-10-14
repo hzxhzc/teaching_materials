@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reporting depreciation: Dells Luggage</title>
+<style>
+:root{--bg:#fff;--fg:#222;--mut:#5b6b7f;--card:#f3eef1;--acc:#7b1f45;--accfg:#fff;--line:#c9c2c6;--ok:#1b7a4b;--okbg:#e3f4ea;--bad:#b23a48;--badbg:#fbe7ea;--shown:#8a5a00;--shownbg:#fff3d6;--blue:#0b3d91;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17141a;--fg:#ece8ee;--mut:#a9b3c2;--card:#262029;--acc:#d6709a;--accfg:#17141a;--line:#463e4a;--ok:#6fd39d;--okbg:#17372a;--bad:#ff8c99;--badbg:#411c24;--shown:#f0c36a;--shownbg:#3d3010;--blue:#8ab4ff}}
+:root[data-theme="dark"]{--bg:#17141a;--fg:#ece8ee;--mut:#a9b3c2;--card:#262029;--acc:#d6709a;--accfg:#17141a;--line:#463e4a;--ok:#6fd39d;--okbg:#17372a;--bad:#ff8c99;--badbg:#411c24;--shown:#f0c36a;--shownbg:#3d3010;--blue:#8ab4ff}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);padding:10px 16px;z-index:5}
+header h1{margin:0;font-size:18px;color:var(--acc)}
+.bar{height:8px;background:var(--card);border-radius:4px;margin-top:6px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--ok);transition:width .3s}
+#pt{font-size:13px;color:var(--mut)}
+main{max-width:780px;margin:0 auto;padding:12px 16px 60px}
+.sec{background:var(--card);border-radius:10px;padding:14px 16px;margin:16px 0}
+.sec h2{margin:0 0 6px;font-size:18px;color:var(--acc)}
+.sec h3{margin:14px 0 4px;font-size:15px}
+p{margin:6px 0}ul{margin:4px 0;padding-left:20px}
+.q{margin-top:12px}
+.tw{overflow-x:auto;margin:6px 0}
+table{border-collapse:collapse;background:var(--bg);font-size:14px}
+th,td{border:1px solid var(--line);padding:4px 8px;text-align:left}
+th{background:var(--card);color:var(--acc)}
+td.r,th.r{text-align:right}
+.f{font:inherit;font-size:14px;color:var(--fg);background:var(--bg);border:1.5px solid var(--line);border-radius:6px;padding:3px 6px;width:96px;max-width:100%}
+select.f{width:auto}
+.f.ok{border-color:var(--ok);background:var(--okbg)}.f.bad{border-color:var(--bad);background:var(--badbg)}.f.shown{border-color:var(--shown);background:var(--shownbg);color:var(--shown)}
+textarea{font:inherit;font-size:14px;width:100%;min-height:64px;color:var(--fg);background:var(--bg);border:1.5px solid var(--line);border-radius:6px;padding:6px;box-sizing:border-box}
+button{font:inherit;font-size:14px;border-radius:6px;border:1.5px solid var(--acc);padding:6px 12px;cursor:pointer;margin:8px 8px 0 0;background:var(--acc);color:var(--accfg)}
+button.alt{background:transparent;color:var(--acc)}
+.res{margin-top:8px;font-size:14px}
+.res b.good{color:var(--ok)}.hints{color:var(--bad);margin:4px 0 0;padding-left:18px}
+.model{background:var(--bg);border-left:4px solid var(--blue);padding:6px 10px;margin:6px 0;color:var(--blue);font-size:14px}
+.note{color:var(--mut);font-size:13px}
+@media(max-width:520px){.f{width:80px}}
+</style>
+</head>
+<body>
+<header>
+<h1>Reporting depreciation: Dells Luggage</h1>
+<div id="pt" aria-live="polite">0 of 0 correct</div>
+<div class="bar" role="progressbar" aria-label="Progress"><i id="pb"></i></div>
+</header>
+<main>
+<p class="note">VCE Accounting Unit 2, Area of Study 3 (textbook Section 16.7). Type an answer and press Enter (or tap away) to check it. Calculators are fine.</p>
+
+<section class="sec" id="s1">
+<h2>1. Recap</h2>
+<p>On 1 July 2029, Dells Luggage bought two non-current assets:</p>
+<ul><li><b>Shop fittings</b> for $8,000 plus GST. Residual value $500, useful life 5 years, straight-line.</li>
+<li><b>Photocopier</b> for $11,000 including GST. Residual value $2,000, useful life 5 years, reducing balance at 27.52% per annum.</li></ul>
+<p class="q"><b>Q1.</b> Shop fittings: what is the annual Depreciation expense? $ {{n:1500|Use ($8,000 - $500) ÷ 5.}}</p>
+<p class="q"><b>Q2.</b> Photocopier: what is the Historical cost? $ {{n:10000|Remove the GST: $11,000 ÷ 1.1.}}</p>
+<div class="tw"><table><tr><th></th><th class="r">Year 1 (30 June 2030)</th></tr>
+<tr><td>Depreciation expense</td><td class="r">$ {{n:2752|Carrying value × 27.52%. In year 1 the Carrying value is the Historical cost.}}</td></tr>
+<tr><td>Carrying value at end of year</td><td class="r">$ {{n:7248|Historical cost minus Accumulated depreciation.}}</td></tr></table></div>
+<p class="q"><b>Q3.</b> What does each method apply to find the Depreciation expense?</p>
+<p>Straight-line: {{s:Historical cost|Historical cost;Carrying value}} &nbsp; Reducing balance: {{s:Carrying value|Historical cost;Carrying value}}</p>
+</section>
+
+<section class="sec" id="s2">
+<h2>2. Guided notes</h2>
+<p>Dells Luggage's depreciation for the year ended 30 June 2030.</p>
+<h3>Step 1: Income Statement</h3>
+<p>Only the amount {{s:consumed|consumed;purchased;paid}} in the current reporting period is reported as Depreciation expense, under 'Other expenses'.</p>
+<div class="tw"><table><tr><th>Other expenses</th><th class="r">$</th></tr>
+<tr><td>Depreciation of Shop fittings</td><td class="r">{{n:1500|Straight-line expense from Q1.}}</td></tr>
+<tr><td>Depreciation of Photocopier</td><td class="r">{{n:2752|Year 1 expense from Q2.}}</td></tr>
+<tr><td>Total depreciation</td><td class="r">{{n:4252|Add the two expenses.}}</td></tr></table></div>
+<h3>Step 2: Balance Sheet (extract) as at 30 June 2030</h3>
+<div class="tw"><table><tr><th>Non-current assets</th><th class="r">$</th><th class="r">$</th></tr>
+<tr><td>Shop fittings</td><td class="r">{{n:8000|Historical cost is never reduced.}}</td><td></td></tr>
+<tr><td>Less Accumulated depreciation</td><td class="r">{{n:1500|One year of expense so far.}}</td><td></td></tr>
+<tr><td>Carrying value</td><td></td><td class="r">{{n:6500|Historical cost minus Accumulated depreciation.}}</td></tr>
+<tr><td>Photocopier</td><td class="r">{{n:10000|The Historical cost excludes GST.}}</td><td></td></tr>
+<tr><td>Less Accumulated depreciation</td><td class="r">{{n:2752|One year of expense so far.}}</td><td></td></tr>
+<tr><td>Carrying value</td><td></td><td class="r">{{n:7248|Historical cost minus Accumulated depreciation.}}</td></tr></table></div>
+<ul><li>Historical cost is always reported because it is {{s:verifiable|verifiable;relevant}} by a source document that independent observers can check. (qualitative characteristic)</li>
+<li>Carrying value is reported because it is more {{s:relevant|verifiable;relevant}} for decision-making. (qualitative characteristic)</li>
+<li>Accumulated depreciation is a {{s:negative|negative;positive}} asset.</li></ul>
+<h3>Step 3: Effect on the accounting equation (both assets, 2030)</h3>
+<div class="tw"><table><tr><th></th><th>Increase / Decrease / No effect</th><th class="r">Amount $</th></tr>
+<tr><td>Assets</td><td>{{s:Decrease|Increase;Decrease;No effect}}</td><td class="r">{{n:4252|Total depreciation for the year.}}</td></tr>
+<tr><td>Liabilities</td><td>{{s:No effect|Increase;Decrease;No effect}}</td><td></td></tr>
+<tr><td>Owner's equity</td><td>{{s:Decrease|Increase;Decrease;No effect}}</td><td class="r">{{n:4252|Depreciation expense decreases net profit.}}</td></tr></table></div>
+<p>Is any cash paid for depreciation? {{s:No|Yes;No}}</p>
+<h3>Step 4: Successive periods (photocopier)</h3>
+<p>Depreciation expense = this year's Accumulated depreciation minus last year's.</p>
+<div class="tw"><table><tr><th>Year (30 June)</th><th class="r">Accumulated depreciation</th><th class="r">Depreciation expense</th></tr>
+<tr><td>2030</td><td class="r">$2,752</td><td class="r">$ {{n:2752|This is the first year, so it equals the Accumulated depreciation.}}</td></tr>
+<tr><td>2031</td><td class="r">$4,747</td><td class="r">$ {{n:1995|$4,747 minus $2,752.}}</td></tr>
+<tr><td>2032</td><td class="r">$6,193</td><td class="r">$ {{n:1446|$6,193 minus $4,747.}}</td></tr>
+<tr><td>2033</td><td class="r">$7,241</td><td class="r">$ {{n:1048|$7,241 minus $6,193.}}</td></tr>
+<tr><td>2034</td><td class="r">$8,000</td><td class="r">$ {{n:759|$8,000 minus $7,241.}}</td></tr></table></div>
+<ul><li>Shop fittings (straight-line): Depreciation expense is $ {{n:1500|The same amount every year.}} every year.</li>
+<li>Under both methods, Accumulated depreciation {{s:increases|increases;decreases;stays the same}} every year.</li>
+<li>Both assets finish at their {{s:residual|residual;historical;carrying}} value.</li>
+<li>Total depreciation over the asset's life = Historical cost minus {{s:residual|residual;historical;carrying}} value.</li></ul>
+</section>
+
+<section class="sec" id="s3">
+<h2>3. Activity 1: Spot the reporting errors</h2>
+<p>Bondi Boards owns shelving (Historical cost $6,000, straight-line) and a laptop (Historical cost $4,000, reducing balance). Depreciation expense was $1,000 (shelving) and $1,400 (laptop) in year 1, and $1,000 (shelving) and $910 (laptop) in year 2. A trainee prepared these extracts for the end of year 2.</p>
+<div class="tw"><table><tr><th>Trainee's Income Statement</th><th class="r">$</th></tr><tr><td>Depreciation of Shelving</td><td class="r">2,000</td></tr><tr><td>Depreciation of Laptop</td><td class="r">2,310</td></tr></table></div>
+<div class="tw"><table><tr><th>Trainee's Balance Sheet</th><th class="r">$</th></tr><tr><td>Shelving</td><td class="r">4,000</td></tr><tr><td>Laptop</td><td class="r">1,690</td></tr></table></div>
+<p class="q"><b>Part A.</b> Identify one error in each extract.</p>
+<p>Income Statement:</p><textarea aria-label="Income Statement error"></textarea>
+<p>Balance Sheet:</p><textarea aria-label="Balance Sheet error"></textarea>
+<button class="alt" data-model="m3">Show model answer</button>
+<div class="model" id="m3" hidden>Income Statement: it shows Accumulated depreciation ($2,000 and $2,310) instead of the year 2 Depreciation expense ($1,000 and $910).<br>Balance Sheet: it shows only the Carrying value, instead of Historical cost, less Accumulated depreciation, giving Carrying value.</div>
+<p class="q"><b>Part B.</b> Prepare the corrected extracts.</p>
+<div class="tw"><table><tr><th>Other expenses</th><th class="r">$</th></tr>
+<tr><td>Depreciation of Shelving</td><td class="r">{{n:1000|The year 2 expense, not the total so far.}}</td></tr>
+<tr><td>Depreciation of Laptop</td><td class="r">{{n:910|The year 2 expense, not the total so far.}}</td></tr></table></div>
+<div class="tw"><table><tr><th>Non-current assets</th><th class="r">Historical cost $</th><th class="r">Less Accumulated depreciation $</th><th class="r">Carrying value $</th></tr>
+<tr><td>Shelving</td><td class="r">{{n:6000|The original cost.}}</td><td class="r">{{n:2000|Year 1 plus year 2 expense.}}</td><td class="r">{{n:4000|Historical cost minus Accumulated depreciation.}}</td></tr>
+<tr><td>Laptop</td><td class="r">{{n:4000|The original cost.}}</td><td class="r">{{n:2310|$1,400 + $910.}}</td><td class="r">{{n:1690|Historical cost minus Accumulated depreciation.}}</td></tr></table></div>
+<p class="q"><b>Part C.</b> If the trainee's Income Statement were used, net profit would be {{s:understated|overstated;understated}} by $ {{n:2400|Compare the trainee's total expenses ($4,310) with the correct total.}}</p>
+</section>
+
+<section class="sec" id="s4">
+<h2>4. Activity 2: Fitzroy Fitness</h2>
+<p>Fitzroy Fitness has a 30 June balance day. At the end of year 2 it owns two non-current assets.</p>
+<ul><li><b>Gym equipment</b> (reducing balance): Historical cost $12,000. Accumulated depreciation at the end of year 1 was $3,600. Depreciation expense for year 2 is $2,520.</li>
+<li><b>Office furniture</b> (straight-line): Historical cost $5,000. Accumulated depreciation at the end of year 1 was $900. Depreciation expense for year 2 is $900.</li></ul>
+<p class="q"><b>Part A.</b> Complete the Income Statement extract for year 2.</p>
+<div class="tw"><table><tr><th>Other expenses</th><th class="r">$</th></tr>
+<tr><td>Depreciation of Gym equipment</td><td class="r">{{n:2520|The year 2 expense.}}</td></tr>
+<tr><td>Depreciation of Office furniture</td><td class="r">{{n:900|The year 2 expense.}}</td></tr>
+<tr><td>Total depreciation</td><td class="r">{{n:3420|Add the two expenses.}}</td></tr></table></div>
+<p class="q"><b>Part B.</b> Complete the Balance Sheet extract at the end of year 2.</p>
+<div class="tw"><table><tr><th>Non-current assets</th><th class="r">Historical cost $</th><th class="r">Less Accumulated depreciation $</th><th class="r">Carrying value $</th></tr>
+<tr><td>Gym equipment</td><td class="r">{{n:12000|The original cost.}}</td><td class="r">{{n:6120|Add year 2 expense to the year 1 Accumulated depreciation.}}</td><td class="r">{{n:5880|Historical cost minus Accumulated depreciation.}}</td></tr>
+<tr><td>Office furniture</td><td class="r">{{n:5000|The original cost.}}</td><td class="r">{{n:1800|Add year 2 expense to the year 1 Accumulated depreciation.}}</td><td class="r">{{n:3200|Historical cost minus Accumulated depreciation.}}</td></tr></table></div>
+<p class="q"><b>Part C.</b> State the effect of the year 2 depreciation on the accounting equation.</p>
+<div class="tw"><table><tr><th></th><th>Increase / Decrease / No effect</th><th class="r">Amount $</th></tr>
+<tr><td>Assets</td><td>{{s:Decrease|Increase;Decrease;No effect}}</td><td class="r">{{n:3420|Total year 2 depreciation.}}</td></tr>
+<tr><td>Liabilities</td><td>{{s:No effect|Increase;Decrease;No effect}}</td><td></td></tr>
+<tr><td>Owner's equity</td><td>{{s:Decrease|Increase;Decrease;No effect}}</td><td class="r">{{n:3420|Depreciation expense decreases net profit.}}</td></tr></table></div>
+</section>
+
+<section class="sec" id="s5">
+<h2>5. Exit ticket</h2>
+<p><b>(a)</b> Referring to one qualitative characteristic each, explain why a non-current asset is reported at Historical cost and why it is also reported at Carrying value in the Balance Sheet.</p>
+<p>Historical cost:</p><textarea aria-label="Historical cost"></textarea>
+<p>Carrying value:</p><textarea aria-label="Carrying value"></textarea>
+<p class="q"><b>(b)</b> Explain the difference between Depreciation expense and Accumulated depreciation, and name the report each appears in.</p>
+<textarea aria-label="Difference"></textarea>
+<button class="alt" data-model="m5">Show model answer</button>
+<div class="model" id="m5" hidden><b>(a)</b> Historical cost: Verifiability. It is the original purchase price, verifiable by a source document, so independent observers can check it. Carrying value: Relevance. Once the asset is depreciated, the Carrying value (the value yet to be consumed, plus any residual value) is more useful for decision-making than Historical cost.<br><b>(b)</b> Depreciation expense is the amount consumed in the current reporting period, reported in the Income Statement. Accumulated depreciation is the total consumed over the asset's life so far, reported in the Balance Sheet.</div>
+</section>
+<section class="sec" id="s6">
+<h2>Early finishers (laptop)</h2>
+<ol><li>Answer Review question 16.7 Q7 in full sentences.</li>
+<li>Build the Dells Luggage photocopier schedule in a spreadsheet.
+<ul><li>Put the rate (27.52%) in its own cell.</li>
+<li>Make columns for Year, Opening Carrying value, Depreciation expense, Accumulated depreciation and Closing Carrying value.</li>
+<li>Calculate Depreciation expense with ROUND(opening Carrying value x rate, 0) so you get whole dollars.</li>
+<li>Check your five years against Figure 16.5 in the textbook.</li></ul></li></ol>
+<h2 style="margin-top:14px">Homework</h2>
+<p>Review questions 16.7, Q1 to Q13. Q8 to Q13 cover graphing and selecting a depreciation method, which we have not covered in class.</p>
+</section>
+</main>
+<script>
+(function(){
+var NUM=/\{\{n:([^|}]*)\|?([^}]*)\}\}/g, SEL=/\{\{s:([^|}]*)\|([^}]*)\}\}/g;
+document.querySelectorAll('.sec').forEach(function(sec){
+  var h=sec.innerHTML.replace(NUM,function(m,a,t){return '<input class="f" inputmode="decimal" autocomplete="off" data-a="'+a+'" data-h="'+t.replace(/"/g,'&quot;')+'" aria-label="answer">';})
+    .replace(SEL,function(m,a,o){return '<select class="f" data-a="'+a+'"><option value="">choose</option>'+o.split(';').map(function(x){return '<option>'+x+'</option>';}).join('')+'</select>';});
+  sec.innerHTML=h;
+  if(sec.querySelector('.f')){
+    var b=document.createElement('div');
+    b.innerHTML='<button class="chk">Check my answers</button><button class="alt rev">Show answers</button><div class="res" aria-live="polite"></div>';
+    sec.appendChild(b);
+  }
+});
+function val(el){return el.tagName==='SELECT'?el.value:el.value.replace(/[$,\s]/g,'');}
+function good(el){var v=val(el);if(v==='')return false;return el.tagName==='SELECT'?v===el.dataset.a:Number(v)===Number(el.dataset.a);}
+function mark(el){var v=val(el);el.classList.remove('shown');el.classList.toggle('ok',good(el));el.classList.toggle('bad',v!==''&&!good(el));}
+function progress(){var all=document.querySelectorAll('.f'),n=0;all.forEach(function(e){if(e.classList.contains('ok'))n++;});
+  document.getElementById('pt').textContent=n+' of '+all.length+' correct';document.getElementById('pb').style.width=(100*n/all.length)+'%';}
+function report(sec){var fs=sec.querySelectorAll('.f'),n=0,hints=[];
+  fs.forEach(function(e){mark(e);if(good(e))n++;else if(val(e)!==''&&e.dataset.h)hints.push(e.dataset.h);});
+  var r=sec.querySelector('.res');if(!r)return;
+  var empty=0;fs.forEach(function(e){if(val(e)==='')empty++;});
+  r.innerHTML='<b class="'+(n===fs.length?'good':'')+'">'+n+' of '+fs.length+' correct</b>'+(empty?' ('+empty+' still blank)':'')+(n===fs.length?' Well done.':'')+
+    (hints.length?'<ul class="hints">'+hints.map(function(h){return '<li>'+h+'</li>';}).join('')+'</ul>':'');
+  progress();}
+document.addEventListener('change',function(e){if(e.target.classList&&e.target.classList.contains('f')){mark(e.target);progress();}});
+document.addEventListener('keydown',function(e){if(e.key==='Enter'&&e.target.classList&&e.target.classList.contains('f')){e.preventDefault();e.target.blur();}});
+document.addEventListener('click',function(e){var t=e.target,sec=t.closest&&t.closest('.sec');
+  if(t.classList.contains('chk'))report(sec);
+  if(t.classList.contains('rev')){sec.querySelectorAll('.f').forEach(function(f){f.value=f.dataset.a;f.classList.remove('ok','bad');f.classList.add('shown');});sec.querySelector('.res').textContent='Answers shown. Try the next one yourself.';progress();}
+  if(t.dataset&&t.dataset.model){var m=document.getElementById(t.dataset.model);m.hidden=!m.hidden;t.textContent=m.hidden?'Show model answer':'Hide model answer';}});
+progress();
+})();
+</script>
+</body>
+</html>
